@@ -15,7 +15,6 @@ trait ApiClient
      */
     protected $endPoint = 'https://one.nhtsa.gov/webapi/api/SafetyRatings/%s?format=json';
 
-
     /**
      * @param string $request
      * @return string
@@ -65,6 +64,4 @@ trait ApiClient
             throw new \Exception("Bad content type");
         }
     }
-
-
 }

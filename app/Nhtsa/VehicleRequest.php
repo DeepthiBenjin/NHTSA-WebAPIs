@@ -1,9 +1,5 @@
 <?php
-
-
 namespace App\Nhtsa;
-
-
 /**
  * Class VehicleRequest
  * @package App\Nhtsa
@@ -12,8 +8,6 @@ class VehicleRequest
 {
     use ApiClient;
 
-    //$requestVars
-    //
     /**
      * process request
      * @param int $year
@@ -28,7 +22,6 @@ class VehicleRequest
         $this->validate($year, $manufacturer, $model);
         $body = $this->availableVehicles($year, $manufacturer, $model);
         return $this->buildResponse($body, $withRating);
-
     }
 
     /**
