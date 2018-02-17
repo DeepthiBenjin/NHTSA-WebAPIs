@@ -31,7 +31,7 @@ class VehicleController extends Controller
                 $manufacturer = $requestVars->manufacturer;
                 $model = $requestVars->model;
 
-                // Disable with rating on post as it's not in requirement
+                // Disable withRating on post as it's not in requirement
                 $withRating = false;
                 unset($requestVars);
 
